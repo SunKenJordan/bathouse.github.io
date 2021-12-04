@@ -1,0 +1,21 @@
+body {
+	/* This changes the background*/
+  background-image: url('Background.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+h1 {
+	border-style:solid;
+	background-color:DarkSlateBlue;
+	color: AliceBlue;
+	margin-left: 20px;
+	text-align:center;
+	border-style:solid;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+
+
