@@ -6,23 +6,40 @@
 	<img src="Pictures/Logo.png" alt="Don't forget to use soap!" width="100" height="100" title="Don't forget to use soap!">
 </a>
 <script>
-function myFunction() {
+var x = 0;
+var freelancer = 0;
+var shop = 0;
+<!--Scipt that adds $1-->
+function addMoney() {
   document.getElementById("money").innerHTML = x += 1;
+  document.getElementById("money").innerHTML = "$" + x;
+  }
+<!--Scipt that buys Freelancer-->
+function buyFreelancer() {
+  document.getElementById("money").innerHTML = x -= 1;
+  document.getElementById("freelancers").innerHTML = freelancer += 1;
+  document.getElementById("freelancers").innerHTML = "Freelancers "+ freelancer;
+  document.getElementById("money").innerHTML = "$" + x;
+}
+function freelancerMath() {
+
 }
 </script>
 </head>
 <body>
 
-<h2>Game 1 - Cookie Clicker</h2>
+<h2 style="text-align:center">Game 1 - Cookie Clicker</h2>
 
-<p id="money"></p>
-<button type="button" onclick="myFunction()">Add 1</button>
+<!--Money Total Display-->
+<p id="money" style="text-align:center">$0</p>
+<p id="freelancers" style="text-align:center"></p>
 
-<script>
-var x = 10;
-x += 5;
-document.getElementById("money").innerHTML = "$" + x;
-</script>
+<div style="text-align:center">
+  <button type="button" onclick="addMoney()">Add 1</button>
+  <br>
+  <button type="button" onclick="buyFreelancer()">Buy Freelancer</button>
+</div>
+
 
 
 
